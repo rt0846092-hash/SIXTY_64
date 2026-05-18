@@ -1,17 +1,3 @@
-/*
- * ============================================================
- *   HOSPITAL MANAGEMENT SYSTEM
- *   C Language Project
- * ============================================================
- *   Features:
- *    - Patient Management  (Add / Search / Display / Remove)
- *    - Doctor  Management  (Add / Search / Display)
- *    - Appointment System  (Book / View / Cancel)
- *    - Billing System      (Generate / View Bill)
- *    - Report Generation   (Summary Reports)
- *    - Persistent File Storage for all records
- * ============================================================
- */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -582,14 +568,6 @@ void generate_report(void) {
             case 1: add_patient();       stay = post_action_prompt(); break;
             case 2: search_patient();    stay = post_action_prompt(); break;
             case 3: view_all_patients(); stay = post_action_prompt(); break;
-
-            /*
-             * REMOVE PATIENT — 3-option post-action:
-             *   post_remove_prompt() returns 1, 2, or 3.
-             *   1 → exit completely
-             *   2 → return to Main Menu  (stay = 0 → ch = 0)
-             *   3 → back to Patient Menu (stay = 1, loop continues)
-             */
             case 4: {
                 int action = remove_patient();
                 if      (action == 1) { printf(GREEN "\n  Goodbye!\n\n" RESET); exit(0); }
@@ -674,7 +652,7 @@ void billing_menu(void) {
 int main(void) {
     int ch;
     do {
-        print_header("HOSPITAL MANAGEMENT SYSTEM  v1.0");
+        print_header("HOSPITAL MANAGEMENT SYSTEM");
         printf("\n");
         printf("  " CYAN "┌─────────────────────────────────┐\n" RESET);
         printf("  " CYAN "│" RESET "  " BOLD "1." RESET "  Patient Management          " CYAN "│\n" RESET);
