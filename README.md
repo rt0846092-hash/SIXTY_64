@@ -45,18 +45,7 @@ The **Hospital Management System** is a console-based application developed in *
 hospital_management/
 │
 ├── hospital.c          ← Main source file (all modules)
-├── Makefile            ← Build instructions
 ├── README.md           ← This file
-│
-├── patients.dat        ← Auto-created: patient records
-├── doctors.dat         ← Auto-created: doctor records
-├── appointments.dat    ← Auto-created: appointment records
-└── billing.dat         ← Auto-created: billing records
-```
-
-> `.dat` files are created automatically when the program runs for the first time.
-
----
 
 ## Getting Started
 
@@ -176,11 +165,11 @@ The project uses **binary file I/O** with `fread()` and `fwrite()`:
 
 | Role | Member | Module |
 |---|---|---|
-| **Team Leader** | *(Name)* | System Architecture, Patient Module |
-| Member 1 | *(Name)* | Billing System |
-| Member 2 | *(Name)* | Appointment Module |
-| Member 3 | *(Name)* | Documentation & README |
-| Member 4 | *(Name)* | Testing & Integration |
+| **Team Leader** | *(Tamang Roshan)* | System Architecture, Patient Module |
+| Member 1 | *(Dangi Chhabilal)* | Billing System |
+| Member 2 | *(Tamang Anju)* | Appointment Module |
+| Member 3 | *(Sinjali Magar Samir)* | Documentation & README |
+| Member 4 | *(Gurung Yushma)* | Testing & Integration |
 
 > **GitHub Repository:** `https://github.com/YOUR_USERNAME/hospital-management-system`
 
